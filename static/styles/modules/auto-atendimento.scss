@@ -1,0 +1,47 @@
+#autoAtendimento {
+    padding: 70px 50px 100px 50px;
+
+    h1 {
+        color: $color-white;
+        font-family: $font-title;
+    }
+    
+    p {
+        color: $color-white;
+        font-family: $font-text;
+        margin-bottom: 60px;
+    }
+
+    .card {
+        cursor: pointer;
+        background-color: $color-light-black;
+        color: $color-white;
+        border-radius: 20px;
+        width: 250px;
+
+        i {
+            font-size: 100px;
+            margin: 10px 0px;
+        }
+
+        h3 {
+            font-family: $font-title;
+            text-align: center;
+            height: 80px;
+        }
+        
+        hr {
+            background-color: #FFF;
+            width: 100%;
+            margin: 20px 0px;
+        }
+        
+        span {
+            font-family: $font-text;
+            font-size: 1rem;
+            text-decoration: dashed;
+            text-align: center;
+        }
+    }
+    
+}

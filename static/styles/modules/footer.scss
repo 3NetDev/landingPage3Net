@@ -1,0 +1,51 @@
+footer {
+    padding-top: 10px;
+    color: $color-white;
+
+    .img-logo {
+        margin-bottom: 30px;
+    }
+    
+    p {
+        font-family: $font-text;
+        font-size: 11pt;
+    }
+
+    hr {
+        background-color: $color-light-black;
+        height: 2px;
+    }
+
+    h2 {
+        font-family: $font-title;
+        font-size: 20pt;
+        line-height: 100px;
+    }
+    
+    i {
+        font-size: 20px;
+        margin: 0px 10px 0px 0px;
+    }
+
+    span {
+        font-size: 11pt;
+        line-height: 35px;
+    }
+
+    #logoAnatel {
+        width: 200px;
+        height: 213px;
+    }
+
+    .devContato {
+        font-family: $font-text;
+        font-weight: 700;
+        background-color: $color-red;
+        color: $color-white;
+        margin-top: 100px;
+
+        a {
+            color: $color-white;
+        }
+    }
+}

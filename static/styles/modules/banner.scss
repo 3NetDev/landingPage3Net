@@ -1,0 +1,118 @@
+main {
+    position: relative;
+    min-height: calc(100vh - 78px);
+
+    .background {
+        z-index: 0;
+        margin: 35px 0px;
+
+        img {
+            width: 75vh;
+        }
+    }
+    
+    .banner-content {
+        z-index: 1;
+        position: absolute;
+        background: $color-rgba;
+        padding: 80px;
+        height: ca;
+
+        #main-img {
+            width: 400px;
+        }
+
+        h3 {
+            font-family: $font-title;
+            color: $color-white;
+            line-height: 26px;
+            font-size: 40pt;
+            margin-left: 24px;
+
+            span {
+                font-family: $font-text;
+                font-size: 24pt;
+            }
+            
+        }
+
+        h2 {
+            color: $color-white;
+            font-family: $font-title;
+            font-size: 45pt;
+
+            span {
+                font-family: $font-title;
+                color: $color-blue;
+            }
+        }
+
+        .details {
+            width: 140px;
+            background-color: $color-blue;
+            margin: 0px 0px 0px 46px;
+            border-radius: 20px;
+
+            p {
+                font-family: $font-title;
+                color: $color-white;
+                font-size: 9pt;
+            }
+
+            span {
+                font-family: $font-title;
+                color: $color-white;
+                font-size: 25pt;
+            }
+            
+        }
+
+        #amazon-logo {
+            width: 150px;
+            margin: 0px 40px;
+        }
+
+        h4 {
+            font-family: $font-title;
+            color: $color-white;
+            font-size: 14pt;
+        }
+        
+        .destaque-content {
+            background-color: $color-red;
+            color: $color-white;
+            border-radius: 30px;
+            padding: 10px 30px;
+            margin: 20px 0px;
+
+            b {
+                font-family: $font-title;
+                color: $color-white;
+                font-size: 25pt;
+                line-height: 100%;
+
+                span {
+                    font-family: $font-decoration;
+                    line-height: 100%;
+                    font-size: 62pt;
+                }
+            }
+
+            p {
+                font-family: $font-text;
+                font-size: 10pt;
+            }
+        }
+
+        a {
+            font-family: $font-title;
+            background-color: $color-red;
+            color: $color-white;
+            font-size: 18pt;
+            border-radius: 18px;
+            padding: 10px 30px;
+            width: 366px;
+            text-align: center;
+        }
+    }
+}

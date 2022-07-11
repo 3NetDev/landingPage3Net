@@ -1,0 +1,28 @@
+header {
+    padding: 10px 30px;
+    color: $color-white;
+
+    img {
+        cursor: pointer;
+        width: 100px;
+    }
+
+    a {
+        color: $color-white;
+    }
+    a:hover {
+        color: $color-white;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            cursor: pointer;
+            font-family: $font-header;
+            font-size: $size-text;
+            text-decoration: none;
+        }
+    }
+}

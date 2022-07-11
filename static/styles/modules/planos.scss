@@ -1,0 +1,68 @@
+#planos {
+    background-color: $color-black;
+    padding: 50px;
+
+    h1 {
+        font-family: $font-title;
+        color: $color-white;
+        margin: 0px 0px 30px 0px;
+    }
+
+    .card {
+        width: 280px;
+        border-radius: 62px;
+        border: none;
+    
+        h3 {
+            font-family: $font-title;
+            color: $color-red;
+            font-size: 30pt;
+            text-align: center;
+            line-height: 40px;
+            margin: 70px 0px 20px 0px;
+            
+            span {
+                font-family: $font-title;
+                font-size: 70pt;
+            }
+        }
+        
+        .content-card {
+            margin-top: 20px;
+            text-align: center;
+            color: $color-black;
+            font-weight: 700;
+
+            span {
+                font-family: $font-text;
+                color: $color-black;
+                font-size: $size-text;
+            }
+
+            hr {
+                background-color: $color-black;
+            }
+
+            p > span {
+                font-size: 50px;
+            }
+        }
+
+        .link {
+            width: 100%;
+            cursor: pointer;
+            border-bottom-left-radius: 62px;
+            border-bottom-right-radius: 62px;
+            padding: 20px;
+            font-family: $font-title;
+            font-size: 25pt;
+            color: $color-white;
+            background-color: $color-red;
+            text-align: center;
+        }
+
+        .link:hover {
+            text-decoration: none;
+        }
+    }
+}

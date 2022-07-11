@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+$font-decoration: 'Titan One', cursive;
+$font-title: 'Anton', sans-serif;
+$font-text: 'Roboto', sans-serif;
+$font-header: 'Inter', sans-serif;
+
+$color-black: #171717;
+$color-light-black: #323232;
+$color-black-background: #020202;
+$color-red: #EA1C26;
+$color-gray: #98999B;
+$color-blue: #0095D9;
+$color-white: #FFF;
+$color-rgba: rgba(0, 0, 0, 0.72);
+
+$size-text: 1rem;
+
+
+* {
+    padding: 0px;
+	margin: 0px;
+	outline: none;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    box-shadow: none;
+}
+
+body {
+    background-color: $color-black-background;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.button-primary {
+    font-family: $font-text;
+    font-weight: 700;
+    background-color: $color-red;
+    color: $color-white;
+    border-radius: 13px;
+    padding: 12px 50px;
+}
+
+.button-primary:hover {
+    color: $color-white;
+    text-decoration: none;
+}
+
+#bannerPromocao {
+    max-width: 100%;   
+}
+
+.img-logo {
+    width: 100px;
+}
+
+#supportIcon {
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #00BB2D;
+    z-index: 2;
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+
+    i {
+        font-size: 50px;
+        color: $color-white;
+    }
+    
+}
