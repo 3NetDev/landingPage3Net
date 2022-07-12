@@ -1,7 +1,7 @@
 <template>
 	<main class="d-flex">
 		<div class="background d-flex col-12 align-items-center justify-content-center">
-			<img src="@/static/media/background_1.png">
+			<img src="/media/background_1.png">
 		</div>
 		<div class="d-flex banner-content col-12 h-100">
 			<div class="col-6 d-flex flex-column justify-content-center">
@@ -29,7 +29,7 @@
 			</div>
 			<div class="col-6 d-flex flex-column align-items-center justify-content-center">
 				<div class="destaque-content">
-					<b>POR R$ <span>99</span>,99 MÊS</b>
+					<b>POR R$ <span>99</span>,90 MÊS</b>
 					<p>* Promoção válida por 1 ano após assinatura</p>
 				</div>
 
