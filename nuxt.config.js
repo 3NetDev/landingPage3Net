@@ -5,7 +5,6 @@ export default {
   //   host: '0', // default: localhost
   //   port: 8000 // default: 3000
   // },
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: '3Net Telecom',
@@ -47,6 +46,10 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    ['@nuxt/image', {
+      provider: 'static',
+      dir: "media",
+    }]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
