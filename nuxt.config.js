@@ -20,12 +20,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'preconnect', type: 'image/x-icon', href: 'https://fonts.googleapis.com' },
-      { rel: 'preconnect', type: 'image/x-icon', href: 'https://fonts.gstatic.com' },
-      { rel: 'stylesheet', type: 'image/x-icon', href: 'https://fonts.googleapis.com/css2?family=Titan+One&display=swap' },
-      { rel: 'stylesheet', type: 'image/x-icon', href: 'https://fonts.googleapis.com/css2?family=Anton&display=swap' },
-      { rel: 'stylesheet', type: 'image/x-icon', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' },
-      { rel: 'stylesheet', type: 'image/x-icon', href: 'https://fonts.googleapis.com/css2?family=Inter&display=swap' }
+      { rel: 'preconnect',  href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect',  href: 'https://fonts.gstatic.com' },
+      { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css2?family=Titan+One&display=swap' },
+      { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css2?family=Anton&display=swap' },
+      { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' },
+      { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css2?family=Inter&display=swap' }
       
     ],
     script: [
