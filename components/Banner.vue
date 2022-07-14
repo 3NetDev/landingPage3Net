@@ -5,8 +5,8 @@
 		</div>
 		<div class="d-flex banner-content col-12 h-100">
 			<div class="col-6 d-flex flex-column justify-content-center">
-				<div class="d-flex align-items-center">
-					<img id="main-img" src="../static/media/500.png"/>
+				<div class="d-flex align-items-end">
+					<img id="main-img" src="../static/media/600.png"/>
 					<h3>
 						MEGAS
 						<br>
@@ -30,7 +30,7 @@
 			<div class="col-6 d-flex flex-column align-items-center justify-content-center">
 				<div class="destaque-content">
 					<b>POR R$ <span>99</span>,90 MÊS</b>
-					<p>* Promoção válida por 1 ano após assinatura</p>
+					<p>* Após 1 ano o valor passará a ser R$ 109,90</p>
 				</div>
 
 				<a href="/contato">ASSINE JÁ !</a>

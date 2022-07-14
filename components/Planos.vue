@@ -17,8 +17,12 @@
 					<p>R$ <span>{{ plano.valor.split(',')[0] }}</span>,{{ plano.valor.split(',')[1] }} / MÊS</p>
 				</div>
 
-				<a class="link" href="/contato" >
-					ASSINAR
+				<a class="link d-flex flex-column" href="/contato" >
+					<b>ASSINAR</b>
+					<span>
+						Fidelidade de 12 meses*
+					</span>
+					
 				</a>
 			</div>
 		</div>
@@ -35,12 +39,12 @@ export default {
 					valor: '69,99'
 				},
 				{
-					velocidade: 200,
-					valor: '79,90'
+					velocidade: 250,
+					valor: '84,90'
 				},
 				{
-					velocidade: 300,
-					valor: '89,90'
+					velocidade: 350,
+					valor: '94,90'
 				}
 			]
 		}

@@ -1,7 +1,7 @@
 <template>
 	<section id="autoAtendimento" class="col-12">
 		<h1>AUTO ATENDIMENTO 3NET PARA CLIENTES</h1>
-		<p>Resolva tudo o que voce precisa e tire suas dúvidas sobre serviços 3NetTelecom de maneira facil em poucos cliques.</p>
+		<p>Resolva tudo o que você precisa e tire suas dúvidas sobre serviços 3NetTelecom de maneira fácil em poucos cliques.</p>
 
 		<div class="d-flex justify-content-between">
 			<a 

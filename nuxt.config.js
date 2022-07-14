@@ -1,6 +1,10 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  // server: {
+  //   host: '0', // default: localhost
+  //   port: 8000 // default: 3000
+  // },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -15,7 +19,14 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preconnect', type: 'image/x-icon', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', type: 'image/x-icon', href: 'https://fonts.gstatic.com' },
+      { rel: 'stylesheet', type: 'image/x-icon', href: 'https://fonts.googleapis.com/css2?family=Titan+One&display=swap' },
+      { rel: 'stylesheet', type: 'image/x-icon', href: 'https://fonts.googleapis.com/css2?family=Anton&display=swap' },
+      { rel: 'stylesheet', type: 'image/x-icon', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' },
+      { rel: 'stylesheet', type: 'image/x-icon', href: 'https://fonts.googleapis.com/css2?family=Inter&display=swap' }
+      
     ],
     script: [
       { src: 'https://kit.fontawesome.com/c75f64f02d.js', crossorigin: 'anonymous' }

@@ -1,7 +1,7 @@
 <template>
 	<header class="d-flex justify-content-between">
-		<img src="@/static/media/logo.png" alt="Logo" class="col-1">
-		<nav class="d-flex align-items-end p-0 m-0 col-7">
+		<img src="@/static/media/logo.png" alt="Logo">
+		<nav class="d-flex align-items-center p-0 m-0 col-7">
 			<ul class="d-flex col-12 justify-content-between p-0 m-0">
 				<li> <a href="/">Início</a> </li>
 				<li @click="scrollTo"> Planos </li>

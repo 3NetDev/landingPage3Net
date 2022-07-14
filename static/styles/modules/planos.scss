@@ -54,11 +54,19 @@
             border-bottom-left-radius: 62px;
             border-bottom-right-radius: 62px;
             padding: 20px;
-            font-family: $font-title;
-            font-size: 25pt;
-            color: $color-white;
             background-color: $color-red;
             text-align: center;
+            color: $color-white;
+            
+            b {
+                font-family: $font-title;
+                font-size: 25pt;
+            }
+
+            span {
+                font-family: $font-text;
+                font-size: 9pt;
+            }
         }
 
         .link:hover {
