@@ -15,7 +15,8 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'description', content: '3Net Telecom, ultra velocidade e qualidade para você. Se conecte ao mundo com a gente.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -24,7 +25,7 @@ export default {
       { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css2?family=Titan+One&display=swap' },
       { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css2?family=Anton&display=swap' },
       { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' },
-      { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css2?family=Inter&display=swap' }
+      { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css2?family=Inter&display=swap' },
       
     ],
     script: [
