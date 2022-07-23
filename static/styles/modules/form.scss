@@ -2,7 +2,7 @@ form {
     background-color: $color-light-black;
     border-radius: 50px;
     padding: 70px 20px;
-    margin-top: 30px;
+    margin-top: 90px;
 
     .input {
         background-color: $color-white;
@@ -31,5 +31,22 @@ form {
 
     .submit {
         margin-top: 50px;
+    }
+
+    @media(max-width: 430px) {
+        .full-input {
+            width: 100%;
+        }
+        .half-input {
+            width: 47%;
+        }
+    
+        .half-content {
+            width: 100%;
+        }
+
+        .submit {
+            width: 100vw;
+        }
     }
 }

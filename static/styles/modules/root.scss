@@ -15,7 +15,7 @@ $color-red: #EA1C26;
 $color-gray: #98999B;
 $color-blue: #0095D9;
 $color-white: #FFF;
-$color-rgba: rgba(0, 0, 0, 0.72);
+$color-rgba: rgba(0, 0, 0, 0.5);
 
 $size-text: 1rem;
 
@@ -27,6 +27,7 @@ $size-text: 1rem;
     font-family: 'Open Sans', sans-serif;
     border: none;
     box-shadow: none;
+    list-style-type: none;
 }
 
 body {
@@ -44,6 +45,7 @@ a:hover {
     color: $color-white;
     border-radius: 13px;
     padding: 12px 50px;
+    text-align: center;
 }
 
 .button-primary:hover {
@@ -62,8 +64,8 @@ a:hover {
 #supportIcon {
     cursor: pointer;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 10px;
+    right: 10px;
     background-color: #00BB2D;
     z-index: 2;
     border-radius: 100%;
@@ -75,4 +77,11 @@ a:hover {
         color: $color-white;
     }
     
+}
+
+
+@media(max-width: 510px) {
+    h1 {
+        font-size: 25pt;
+    }
 }

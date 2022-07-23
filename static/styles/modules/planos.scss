@@ -1,6 +1,6 @@
 #planos {
     background-color: $color-black;
-    padding: 50px;
+    padding: 50px 0px;
 
     h1 {
         font-family: $font-title;
@@ -8,69 +8,197 @@
         margin: 0px 0px 30px 0px;
     }
 
-    .card {
-        width: 280px;
-        border-radius: 62px;
-        border: none;
-    
-        h3 {
-            font-family: $font-title;
-            color: $color-red;
-            font-size: 30pt;
-            text-align: center;
-            line-height: 40px;
-            margin: 70px 0px 20px 0px;
-            
-            span {
+    .content-planos {
+        max-width: 1000px;
+        justify-content: space-evenly;
+        
+        .card-planos {
+            display: flex;
+            width: 280px;
+            border-radius: 62px;
+            border: none;
+            margin: 20px;
+            background-color: $color-white;
+        
+            h3 {
                 font-family: $font-title;
-                font-size: 70pt;
+                color: $color-red;
+                font-size: 30pt;
+                text-align: center;
+                line-height: 40px;
+                margin: 70px 0px 20px 0px;
+                
+                span {
+                    font-family: $font-title;
+                    font-size: 70pt;
+                }
+            }
+            
+            .content-card {
+                margin-top: 20px;
+                text-align: center;
+                color: $color-black;
+                font-weight: 700;
+    
+                span {
+                    font-family: $font-text;
+                    color: $color-black;
+                    font-size: $size-text;
+                }
+    
+                hr {
+                    background-color: $color-black;
+                }
+    
+                p > span {
+                    font-size: 50px;
+                    margin: 0px;
+                }
+
+                img {
+                    width: 122px;
+                }
+
+                span.plus {
+                    font-family: $font-title;
+                    font-size: 23pt;
+                    margin-right: 10px;
+                }
+            }
+    
+            .link {
+                width: 100%;
+                cursor: pointer;
+                border-bottom-left-radius: 62px;
+                border-bottom-right-radius: 62px;
+                padding: 20px;
+                background-color: $color-red;
+                text-align: center;
+                color: $color-white;
+                
+                b {
+                    font-family: $font-title;
+                    font-size: 25pt;
+                }
+    
+                span {
+                    font-family: $font-text;
+                    font-size: 9pt;
+                }
+            }
+    
+            .link:hover {
+                text-decoration: none;
             }
         }
         
-        .content-card {
-            margin-top: 20px;
-            text-align: center;
-            color: $color-black;
-            font-weight: 700;
-
-            span {
-                font-family: $font-text;
-                color: $color-black;
-                font-size: $size-text;
-            }
-
-            hr {
-                background-color: $color-black;
-            }
-
-            p > span {
-                font-size: 50px;
-            }
-        }
-
-        .link {
-            width: 100%;
-            cursor: pointer;
-            border-bottom-left-radius: 62px;
-            border-bottom-right-radius: 62px;
-            padding: 20px;
-            background-color: $color-red;
-            text-align: center;
+        i {
+            display: none;
             color: $color-white;
-            
-            b {
-                font-family: $font-title;
-                font-size: 25pt;
-            }
+            font-size: 80px;
+            margin: 20px;
+        }
+    }
 
-            span {
-                font-family: $font-text;
-                font-size: 9pt;
+    .content-step {
+        display: none;
+        margin-top: 20px;
+        width: 100px;
+        
+        .step {
+            background-color: $color-white;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+        }
+
+        .active {
+            background-color: $color-red;
+        }
+    }
+
+    @media(max-width: 670px) {
+        .content-planos {
+            .card-planos:not(:nth-child(2)) {
+                display: none;
             }
         }
 
-        .link:hover {
-            text-decoration: none;
+        .content-step {
+            display: flex;
+        }
+
+        i.fa-solid {
+            display: block;
+        }
+
+        i.fa-angle-left {
+            visibility:  hidden;
+        }
+
+    }
+    
+    @media(max-width: 510px) {
+        .content-planos {
+            .card-planos {
+                width: 230px;
+                border-radius: 50px;
+                
+                h3 {
+                    font-size: 20pt;
+                    line-height: 30px;
+                    
+                    span {
+                        font-size: 50pt;
+                    }
+                }
+
+                .link {
+                    border-bottom-left-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                    b {
+                        font-size: 20pt;
+                    }
+                }
+
+                .content-card {
+                    p > span {
+                        font-size: 40px;
+                    }
+                }
+            }
+
+
+            i {
+                font-size: 50px;
+                margin: 0px;
+            }
+
+        }
+
+        .content-step {
+            width: 70px;
+
+            .step {
+                width: 7px;
+                height: 7px;
+            }
+        }
+    }
+
+    @media(max-width: 350px) {
+        .content-planos {
+            .card-planos {
+                width: 200px;
+                
+                .content-card {
+                    margin: 0px;
+
+                    hr {
+                        margin: 5px 0px;
+                    }
+                }
+            }
         }
     }
 }

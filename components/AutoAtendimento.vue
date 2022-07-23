@@ -1,31 +1,33 @@
 <template>
-	<section id="autoAtendimento" class="col-12">
-		<h1>AUTO ATENDIMENTO 3NET PARA CLIENTES</h1>
-		<p>Resolva tudo o que você precisa e tire suas dúvidas sobre serviços 3NetTelecom de maneira fácil em poucos cliques.</p>
-
-		<div class="d-flex justify-content-between">
-			<a 
-				v-for="(card, index) in listCards"
-				:key="index"
-				class="d-flex"
-				:href="card.link"
-				target="_blank"
-			>
-				<div 
-					class="card d-flex flex-column align-items-center p-4 col-auto" 
+	<div class="col-12 d-flex justify-content-center">
+		<section id="autoAtendimento" class="col-12 content">
+			<h1>AUTO ATENDIMENTO 3NET PARA CLIENTES</h1>
+			<p>Resolva tudo o que você precisa e tire suas dúvidas sobre serviços 3NetTelecom de maneira fácil em poucos cliques.</p>
+	
+			<div class="d-flex content-cards row">
+				<a 
+					v-for="(card, index) in listCards"
+					:key="index"
+					class="d-flex"
+					:href="card.link"
+					target="_blank"
 				>
-					<i :class="card.class"></i>
-					<h3>{{ card.title }}</h3>
-					<div class="d-flex flex-column justify-content-start">
-						<hr />
-						<span>{{ card.description }}</span>
+					<div 
+						class="card d-flex flex-column align-items-center p-4 col-auto" 
+					>
+						<i :class="card.class"></i>
+						<h3>{{ card.title }}</h3>
+						<div class="d-flex flex-column justify-content-start">
+							<hr />
+							<span>{{ card.description }}</span>
+						</div>
 					</div>
-				</div>
-
-			</a>
-		</div>
-
-	</section>
+	
+				</a>
+			</div>
+	
+		</section>
+	</div>
 </template>
 
 <script>

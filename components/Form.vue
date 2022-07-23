@@ -1,7 +1,7 @@
 <template>
-	<div class="d-flex justify-content-center p-5">
-		<form action="" class="col-8 d-flex justify-content-center">
-			<div class="d-flex row form-container justify-content-between col-10">
+	<div class="d-flex justify-content-center p-md-5 p-3">
+		<form action="" class="col-12 col-md-10 col-lg-9 d-flex justify-content-center">
+			<div class="d-flex row form-container justify-content-between col-xl-9 col-lg-10 col-md-11 col-12">
 				<input class="input full-input" type="text" placeholder="Nome completo" name="nome">
 				<input class="input full-input" type="text" placeholder="E-mail" email="email">
 				<input class="input full-input" type="text" placeholder="Celular" name="celular">
@@ -17,7 +17,7 @@
 				</select>
 
 				<div class="submit d-flex justify-content-center col-12">
-					<input type="submit" class="button-primary col-6" placeholder="ENVIAR">
+					<input type="submit" class="button-primary col-12 col-md-6 col-lg-7 col-xl-6" placeholder="ENVIAR">
 				</div>
 			</div>
 

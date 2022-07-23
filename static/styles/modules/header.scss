@@ -1,28 +1,95 @@
 header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
     padding: 10px 30px;
     color: $color-white;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.9);
 
     img {
         cursor: pointer;
-        width: 130px;
+        width: 80px;
     }
 
-    a {
-        color: $color-white;
-    }
-    a:hover {
-        color: $color-white;
-        text-decoration: none;
-    }
+    nav.nav-desktop {
+        display: flex;
+        width: 600px;
 
-    ul {
-        list-style-type: none;
-
-        li {
-            cursor: pointer;
-            font-family: $font-header;
+        a {
+            color: $color-white;
             font-size: $size-text;
+        }
+        a:hover {
+            color: $color-white;
             text-decoration: none;
         }
+
+        ul {
+            li {
+                cursor: pointer;
+                font-family: $font-header;
+                font-size: $size-text;
+                text-decoration: none;
+            }
+        }
     }
+
+    nav.nav-menu-mobile {
+        display: none;
+        position: fixed;
+        height: 100%;
+        width: 325px;
+        top: 0px;
+        right: 0px;
+        background-color: $color-light-black;
+        z-index: 2;
+        padding: 40px 15px;
+
+        i {
+            font-size: 30px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        li {
+            padding: 20px 20px;
+
+            a {
+                color: $color-white;
+            }
+        }
+        
+        li:hover {
+            border-radius: 20px;            
+            background-color: $color-black;
+        }
+
+        hr {
+            background-color: $color-black;
+            height: 2px;
+        }
+    }
+
+    #mobile-menu {
+        display: none;
+
+        i {
+            color: $color-white;
+            font-size: 25px;
+        }
+
+    }
+
+    @media(max-width: 900px) {
+        nav.nav-desktop {
+            display: none;
+        }
+
+        #mobile-menu {
+            display: flex;
+            align-items: center;
+        }
+    }
+
 }

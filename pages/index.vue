@@ -3,7 +3,7 @@
 		<Header/>
 		<Banner/>
 		<Planos/>
-		<img id="bannerPromocao" src="../static/media/banner_prime.png"/>
+		<img id="bannerPromocao" src="../static/media/banner_paramount.png"/>
 		<AutoAtendimento/>
 		<Footer/>
 

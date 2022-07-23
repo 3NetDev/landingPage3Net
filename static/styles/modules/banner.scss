@@ -1,118 +1,269 @@
 main {
     position: relative;
-    min-height: calc(100vh - 78px);
+    margin-top: 90px;
 
     .background {
         z-index: 0;
-        margin: 35px 0px;
 
         img {
-            width: 75vh;
+            width: 100%;
+            height: 100%;
+        }
+
+        #img-mobile {
+            display: none;
         }
     }
     
-    .banner-content {
+    .banner-container {
         z-index: 1;
         position: absolute;
         background: $color-rgba;
         padding: 80px;
-        height: ca;
-
-        #main-img {
-            width: 400px;
-        }
-
-        h3 {
-            font-family: $font-title;
-            color: $color-white;
-            line-height: 26px;
-            font-size: 40pt;
-            margin-left: 24px;
-
-            span {
-                font-family: $font-text;
-                font-size: 24pt;
-            }
-            
-        }
-
-        h2 {
-            color: $color-white;
-            font-family: $font-title;
-            font-size: 45pt;
-
-            span {
-                font-family: $font-title;
-                color: $color-blue;
-            }
-        }
-
-        .details {
-            width: 140px;
-            background-color: $color-blue;
-            margin: 0px 0px 0px 46px;
-            border-radius: 20px;
-
-            p {
-                font-family: $font-title;
-                color: $color-white;
-                font-size: 9pt;
-            }
-
-            span {
-                font-family: $font-title;
-                color: $color-white;
-                font-size: 25pt;
-            }
-            
-        }
-
-        #amazon-logo {
-            width: 150px;
-            margin: 0px 40px;
-        }
-
-        h4 {
-            font-family: $font-title;
-            color: $color-white;
-            font-size: 14pt;
-        }
         
-        .destaque-content {
-            background-color: $color-red;
-            color: $color-white;
-            border-radius: 30px;
-            padding: 10px 30px;
-            margin: 20px 0px;
+        .content-banner {
+            width: 535px;
 
-            b {
+            #main-img {
+                width: 400px;
+            }
+    
+            h3 {
                 font-family: $font-title;
                 color: $color-white;
-                font-size: 25pt;
-                line-height: 100%;
-
+                line-height: 26px;
+                font-size: 40pt;
+                margin-left: 24px;
+    
                 span {
-                    font-family: $font-decoration;
+                    font-family: $font-text;
+                    font-size: 24pt;
+                }
+                
+            }
+    
+            span.plus {
+                color: $color-white;
+                font-family: $font-title;
+                font-size: 35pt;
+            }
+            
+            .img-promo {
+                width: 300px;
+                margin: 10px;
+                object-fit: contain;
+            }
+              
+            .details {
+                width: 140px;
+                background-color: $color-blue;
+                margin: 0px 0px 0px 46px;
+                border-radius: 20px;
+    
+                p {
+                    font-family: $font-title;
+                    color: $color-white;
+                    font-size: 9pt;
+                }
+    
+                span {
+                    font-family: $font-title;
+                    color: $color-white;
+                    font-size: 25pt;
+                }
+                
+            }
+   
+            h4 {
+                font-family: $font-title;
+                color: $color-white;
+                font-size: 14pt;
+                margin: 10px 0px;
+            }
+            
+            .destaque-content {
+                background-color: $color-red;
+                color: $color-white;
+                border-radius: 30px;
+                padding: 10px 30px;
+                margin: 20px 0px;
+    
+                b {
+                    font-family: $font-title;
+                    color: $color-white;
+                    font-size: 25pt;
                     line-height: 100%;
-                    font-size: 62pt;
+    
+                    span {
+                        font-family: $font-decoration;
+                        line-height: 100%;
+                        font-size: 62pt;
+                    }
+                }
+    
+                p {
+                    font-family: $font-text;
+                    font-size: 10pt;
                 }
             }
-
-            p {
-                font-family: $font-text;
-                font-size: 10pt;
+    
+            a {
+                font-family: $font-title;
+                background-color: $color-red;
+                color: $color-white;
+                font-size: 18pt;
+                border-radius: 18px;
+                padding: 10px 30px;
+                width: 366px;
+                text-align: center;
             }
         }
+    }
 
-        a {
-            font-family: $font-title;
-            background-color: $color-red;
-            color: $color-white;
-            font-size: 18pt;
-            border-radius: 18px;
-            padding: 10px 30px;
-            width: 366px;
-            text-align: center;
+    @media(max-width: 1290px) {
+        .banner-container {
+            padding: 20px;
+
+
+            .content-banner {
+                width: 400px;
+
+                #main-img {
+                    width: 300px;
+                }
+        
+                h3 {
+                    font-size: 30pt;
+
+                    span {
+                        font-size: 17pt;
+                    }
+                    
+                }
+                .img-promo {
+                    width: 220px;
+                }
+        
+                .details {
+                    width: 105px;
+                    border-radius: 12px;
+                    p {
+                        font-size: 7pt;
+                    }
+        
+                    span {
+                        font-size: 18pt;
+                    }
+                    
+                }
+        
+                h4 {
+                    font-size: 11pt;
+                }
+                
+                .destaque-content {
+                    border-radius: 20px;
+
+                    b {
+                        font-size: 14pt;
+                        span {
+                            font-size: 40pt;
+                        }
+                    }
+        
+                    p {
+                        font-size: 7pt;
+                    }
+                }
+        
+                a {
+                    font-size: 14pt;
+                    width: 245px;
+                    border-radius: 14px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 839px) {
+        #img-banner {
+            display: none;
+        }
+
+        .background #img-mobile {
+            display: block;
+        }
+
+        .banner-container {
+        
+            .content-banner {
+                .destaque-content {
+                    width: 100%;
+                }
+
+                a {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 465px) {
+        .banner-container {
+            
+            .content-banner {
+                width: 280px;
+    
+                #main-img {
+                    width: 200px;
+                }
+        
+                h3 {
+                    font-size: 22pt;
+                    margin-right: 8px;
+                    line-height: 15px;
+
+                    span {
+                        font-size: 13pt;                        
+                    }
+                    
+                }
+        
+                span.plus {
+                    font-size: 21pt;
+                }
+                
+                .img-promo {
+                    width: 140px;
+                }
+                  
+                .details {
+                    width: 93px;
+
+                    p {
+                        font-size: 6pt;
+                    }
+        
+                    span {
+                        font-size: 18pt;
+                    }
+                    
+                }
+       
+                h4 {
+                    font-size: 9pt;
+                }
+                
+                .destaque-content {
+                    padding: 5px 20px;
+
+                }
+        
+                a {
+                    padding: 4px 30px;
+                    border-radius: 10px;
+                }
+            }
         }
     }
 }

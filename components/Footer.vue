@@ -1,8 +1,8 @@
 <template>
 	<footer>
 		<hr>
-		<div class="d-flex justify-content-around">
-			<div class="col-3">
+		<div class="d-flex row col-12 p-1 justify-content-around">
+			<div class="col-3 content-footer">
 				<img src="../static/media/logo.png" alt="logo" class="img-logo">
 				<p>
 					3NET Telecon.					
@@ -13,7 +13,7 @@
 					Bandeira branca II, CEP  12323-630, Jacareí, SP
 				</p>
 			</div>
-			<div class="col-auto">
+			<div class="col-auto content-footer">
 				<h2>Fale Conosco</h2>
 				<div class="d-flex align-items-center">
 					<i class="fa-brands fa-whatsapp"></i>
@@ -28,7 +28,7 @@
 					<span>suporte@3nettelecom.com.br</span>
 				</div>
 			</div>
-			<div class="col-3 d-flex justify-content-center">
+			<div class="col-3 d-flex justify-content-center content-footer">
 				<img src="../static/media/anatel.png" id="logoAnatel">
 			</div>
 		</div>

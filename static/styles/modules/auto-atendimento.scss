@@ -1,47 +1,81 @@
 #autoAtendimento {
     padding: 70px 50px 100px 50px;
+    max-width: 1345px;
 
     h1 {
         color: $color-white;
         font-family: $font-title;
     }
-    
+
     p {
         color: $color-white;
         font-family: $font-text;
         margin-bottom: 60px;
     }
+    .content-cards {
+        justify-content: space-between;
 
-    .card {
-        cursor: pointer;
-        background-color: $color-light-black;
-        color: $color-white;
-        border-radius: 20px;
-        width: 250px;
+        .card {
+            cursor: pointer;
+            background-color: $color-light-black;
+            color: $color-white;
+            border-radius: 20px;
+            width: 250px;
+            margin: 15px;
 
-        i {
-            font-size: 100px;
-            margin: 10px 0px;
-        }
+            i {
+                font-size: 100px;
+                margin: 10px 0px;
+            }
 
-        h3 {
-            font-family: $font-title;
-            text-align: center;
-            height: 80px;
-        }
-        
-        hr {
-            background-color: #FFF;
-            width: 100%;
-            margin: 20px 0px;
-        }
-        
-        span {
-            font-family: $font-text;
-            font-size: 1rem;
-            text-decoration: dashed;
-            text-align: center;
+            h3 {
+                font-family: $font-title;
+                text-align: center;
+                height: 80px;
+            }
+
+            hr {
+                background-color: #FFF;
+                width: 100%;
+                margin: 20px 0px;
+            }
+
+            span {
+                font-family: $font-text;
+                font-size: 1rem;
+                text-decoration: dashed;
+                text-align: center;
+            }
         }
     }
-    
+
+
+    @media(max-width: 950px) {
+
+        .content-cards {
+            justify-content: space-around;
+        }
+    }
+
+
+    @media(max-width: 434px) {
+        padding: 70px 20px 100px 20px;
+
+        .content-cards {
+            justify-content: space-around;
+
+            .card {
+                width: 210px;
+
+                i  {
+                    font-size: 70px;
+                }
+
+                h3 {
+                    font-size: 18pt;
+                }
+            }
+        }
+    }
+
 }
